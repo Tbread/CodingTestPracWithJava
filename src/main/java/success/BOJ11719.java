@@ -1,4 +1,4 @@
-package defaultInput;
+package success;
 
 public class BOJ11719 {
     public static void main(String[] args)throws Exception{

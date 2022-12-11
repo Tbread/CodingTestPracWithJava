@@ -1,4 +1,4 @@
-package defaultInput;
+package success;
 import java.io.*;
 import java.util.StringTokenizer;
 public class BOJ11022 {

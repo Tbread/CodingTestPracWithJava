@@ -1,4 +1,4 @@
-package defaultInput;
+package success;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

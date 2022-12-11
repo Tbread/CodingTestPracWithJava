@@ -1,27 +1,33 @@
-package defaultInput;
+package success;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
 
-public class BOJ10953 {
+public class BOJ2441 {
     public static void main(String[] ars) throws Exception {
-        Solution10953 s = new Solution10953();
+        Solution2441 s = new Solution2441();
         s.solution();
     }
 }
 
-class Solution10953 {
+class Solution2441 {
     public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st;
-        int repeat = Integer.parseInt(br.readLine());
-        for (int i = 0; i < repeat; i++) {
-            st = new StringTokenizer(br.readLine(),",");
-            bw.write(Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken())+"\n");
+        int a = Integer.parseInt(br.readLine());
+        int star = 0;
+        for(int i = 1;i<=a;i++){
+            for(int j = 1;j<=a;j++){
+                if (j-star<=0) {
+                    bw.write(" ");
+                } else {
+                    bw.write("*");
+                }
+            }
+            bw.write("\n");
+            star++;
         }
         bw.flush();
         bw.close();

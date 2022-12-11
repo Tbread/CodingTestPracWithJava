@@ -1,4 +1,4 @@
-package defaultInput;
+package success;
 
 public class BOJ2557 {
     public static void main(String[] ars) {
